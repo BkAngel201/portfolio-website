@@ -695,6 +695,10 @@ input, select, textarea {
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
 		}
+			.row.gtr-uniform section .icon.major:before {
+				font-size: 3.5em;
+				line-height: 1.7;
+			}
 
 		.row.aln-left {
 			justify-content: flex-start;
