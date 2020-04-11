@@ -4124,3 +4124,8 @@ input, select, textarea {
 					}
 
 	}
+
+#titleBar,
+#navPanel {
+	display: none !important;
+}
