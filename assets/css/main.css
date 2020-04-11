@@ -2650,7 +2650,7 @@ input, select, textarea {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
 			margin-right: 20px;
-			width: 120px;
+			width: 145px;
 		}
 			ul.actions li:last-child {
 				margin-right: 0;
@@ -2659,6 +2659,7 @@ input, select, textarea {
 			ul.actions li a {
 				position: relative;
 				color: rgba(255, 255, 255, 0.75);
+				transition: font-size .3s ease-in-out;
 			}
 			ul.actions li a:hover {
 				font-size: 2.5rem;
@@ -2676,14 +2677,14 @@ input, select, textarea {
 				border: 1px solid #e44c65;
 				border-left: 0;
 				border-radius: 0 10px 10px 0;
-				min-width: 120px;
-				transition: border .5s ease-in-out, opacity .5s ease-in-out;
+				min-width: 130px;
+				transition: border .3s ease-in-out, opacity .3s ease-in-out;
 			}
 			ul.actions li a span:hover{
 				opacity: 1;
 				font-size: 1.2rem;
 				line-height: 2.5;
-				padding-left: 40px;
+				padding-left: 45px;
 			}
 
 
@@ -3664,6 +3665,22 @@ input, select, textarea {
 				width: 25em;
 			}
 
+				.spotlight ul.actions li {
+					width: 135px;
+				}
+				
+				.spotlight ul.actions li a:hover {
+					font-size: 2.5rem;
+				}
+				.spotlight ul.actions li a span.label {
+					min-width: 110px;
+				}
+				.spotlight ul.actions li a span:hover{
+					font-size: 1rem;
+					line-height: 3;
+					padding-left: 43px;
+				}
+
 		/* Wrapper */
 
 			.wrapper {
@@ -4130,6 +4147,11 @@ input, select, textarea {
 			.spotlight .content {
 				padding: 3em 1.25em 1em 1.25em !important;
 			}
+
+			.spotlight ul.actions li {
+				width: 100%;
+			}
+			
 
 		/* Wrapper */
 
