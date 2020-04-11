@@ -2643,16 +2643,49 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		justify-content: space-around;
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
 			margin-right: 20px;
+			width: 120px;
 		}
 			ul.actions li:last-child {
 				margin-right: 0;
 			}
+
+			ul.actions li a {
+				position: relative;
+				color: rgba(255, 255, 255, 0.75);
+			}
+			ul.actions li a:hover {
+				font-size: 2.5rem;
+			}
+			ul.actions li a span.label {
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: inline;
+				font-size: 0px;
+				z-index: 1000;
+				border: 1px solid #e44c65;
+				border-left: 0;
+				border-radius: 0 10px 10px 0;
+				min-width: 120px;
+				transition: border .5s ease-in-out, opacity .5s ease-in-out;
+			}
+			ul.actions li a span:hover{
+				opacity: 1;
+				font-size: 1.2rem;
+				line-height: 2.5;
+				padding-left: 40px;
+			}
+
 
 		ul.actions.special {
 			-moz-justify-content: center;
