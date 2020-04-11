@@ -2646,6 +2646,9 @@ input, select, textarea {
 			vertical-align: middle;
 			margin-right: 20px;
 		}
+			ul.actions li:last-child {
+				margin-right: 0;
+			}
 
 		ul.actions.special {
 			-moz-justify-content: center;
@@ -3706,6 +3709,12 @@ input, select, textarea {
 						list-style: none;
 						padding-left: 0;
 					}
+
+						.spotlight .content .features li {
+							padding-left: 0;
+						}
+
+
 				.spotlight .goto-next {
 					display: none;
 				}
